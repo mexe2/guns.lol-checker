@@ -9,8 +9,8 @@ OUTPUT_FILE = Path("successful-guns.lol.txt")
 CHARS = string.ascii_lowercase + string.digits + "._"
 
 
-def generate_username():
-    return "".join(random.choices(CHARS, k=4))
+def generate_username():                 
+    return "".join(random.choices(CHARS, k=3)) # k=? number of characters 
 
 
 with sync_playwright() as p:
